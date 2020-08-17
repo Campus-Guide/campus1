@@ -66,26 +66,26 @@
 						</header>
 						
 						<h3>Sign Up here</h3>
-									<form method="post" action="#">
+									<form method="post" action="sreg.php">
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall">
 												<input type="text" name="name" id="name" value="" placeholder="Name" />
 											</div>
 											<div class="col-6 col-12-xsmall">
-												<input type="Registration number" name="Registration number" id="Registration number" value="" placeholder="Registration number" />
+												<input type="Registration number" name="Registrationnumber" id="Registrationnumber" value="" placeholder="Registration number" />
 											</div>
 											<!-- Break -->
 											<div class="col-12">
-												<select name="category" id="category">
-													<option value="">- Select Course -</option>
-													<option value="alpha">CL 111</option>
-													<option value="beta">DS 113</option>
-													<option value="gamma">DS 112</option>
-													<option value="delta">1S 162</option>
-													<option value="epsilon">MT 100</option>
-													<option value="zeta">CS 174</option>
-													<option value="eta">CS 173</option>
-													<option value="theta">MT 161</option>
+												<select name="course" id="category">
+													<option disabled="disabled" selected="selected"> Select Course </option>
+													<option >CL 111</option>
+													<option >DS 113</option>
+													<option >DS 112</option>
+													<option >1S 162</option>
+													<option >MT 100</option>
+													<option >CS 174</option>
+													<option >CS 173</option>
+													<option >MT 161</option>
 												</select>
 											</div>
 											<!-- Break -->
@@ -124,59 +124,45 @@
 												<div class="col-4 col-12-small">
 												<input type="radio" id="radio-gam" name="radio">
 												<label for="radio-gam">SJMC</label>
-											</div><br>
-											<!-- Break -->
+											</div><br><br>
 											
-											
-											
-											<br><h3> Choose your seminar day </h3> 
-											
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="checkbox-alpha" name="checkbox">
-												<label for="checkbox-alpha">Monday</label>
-											</div>
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="checkbox-beta" name="checkbox" checked>
-												<label for="checkbox-beta">Tuesday</label>
-											</div>
-											
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="checkbox-gamma" name="checkbox">
-												<label for="checkbox-gamma">Wednesday</label>
-											</div>
-											
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="checkbox-zeta" name="checkbox">
-												<label for="checkbox-zeta">Thursday</label>
-											</div>
-											
-											<div class="col-6 col-12-small">
-												<input type="checkbox" id="checkbox-theta" name="checkbox">
-												<label for="checkbox-theta">Friday</label>
-											</div>
 											<!-- Break -->
 											<div class="col-12">
-												<textarea name="textarea" id="textarea" placeholder="Enter the seminar time" rows="2"></textarea>
+												<select name="day" id="day">
+													<option disabled="disabled" selected="selected"> Select Day</option>
+													<option >Monday</option>
+													<option >Tuesday</option>
+													<option >Wednesday</option>
+													<option >Thursday</option>
+													<option >Friday</option>
+													
+												</select>
 											</div>
 											
+											<!-- Break -->
 											<div class="col-12">
-												<textarea name="textarea" id="textarea" placeholder="Enter the name of your seminar leader" rows="2"></textarea>
+												<p>Choose Seminar time</p>
+												<input type="time" name="seminartime" id="seminartime" value="" placeholder="" />
+												
 											</div>
+											
+											
 											<!-- Break -->
 											<div class="col-12">
 												<ul class="actions">
-													<a href="home page 1.html"><li><input type="submit" value="Submit Form" class="primary" /></li></a>
-													<li><input type="reset" value="Reset" /></li>
+													<li>
+														<input type="submit" value="Submit Form" /></li>
+													<li>
 												</ul>
 											</div>
 										</div>
 									</form>
 						
-						<p>Additional things to write hapa </p>
+						<p>Submit Form to save your seminar details. </p>
 						
 						<hr />
-						<h3>Why a student should register for a aseminar</h3>
-						<p>Hapa tuna explain the importance of the seminar to the students na contribution yake kwenye coursework yake</p>
+						<h3>thankyou for registering for your seminar</h3>
+						<p>You can now proceed with attending the specific seminar you have chosen at the specific venue.</p>
 						
 					</div>
 				</div>
@@ -187,32 +173,46 @@
 				<div class="inner">
 					<div class="content">
 						<section>
-							<h3>A little info about us</h3>
-							<p>You explain a little about us.</p>
-						</section>
-						<section>
-							<h4>Credits of this work goes to :</h4>
-							<ul class="alt">
-								<p>Anna-maria Assey.</p>
-								<p>Angela Mwemezi.</p>
-								<p>Vivian Ndilanha.</p>
-								<p>Prince Mabeyo.</p>
-			                    <p>Samwel Nkya.</p>
-								
+							<h3>Site Links</h3>
+							<ul class="plain">
+							<li><a href="map1.html">Campus Map</a></li>
+							  <li> <a href="no-pop-up registration.html">Seminar Registration</a></li>
+							  <li> <a href="https://github.com/org/Campus-Guide/people?query=role%3Aowner">Contact</a></li>
+							  <li> <a href="#">Frequently Asked Questions</a></li>
 							</ul>
 						</section>
 						<section>
-							<h4>Follow us on our social media pages</h4>
+							<h3>Campus Guide</h3>
 							<ul class="plain">
-								<li><a href="#"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
-								<li><a href="#"><i class="icon fa-facebook">&nbsp;</i>Facebook</a></li>
-								<li><a href="#"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
-								<li><a href="#"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+							<li><a href="map1.html">About us</a></li>
+							   <li><a href="no-pop-up registration.html">Design Assets</a></li>
+							  <li> <a href="https://github.com/org/Campus-Guide/people?query=role%3Aowner">Terms of Use</a></li>
+							   <li><a href="#">Privacy Policy</a></li>
+							</ul>
+							
+						</section>
+						<section>
+							<h4>CampusGuide team</h4>
+							<ul class="alt">
+								<li>Ndilanha,Vivian Edward</li>
+								<li>Assey,Anna-Maria Geofrey</li>
+								<li>Mwemezi,Angela Jovin</li>
+								<li>Nkya,Samuel Jubilate</li>
+								<li>Mabeyo,Princedenis William</li>
+							</ul>
+						</section>
+						<section>
+							<h4>Support Contact </h4>
+							<ul class="plain">
+								
+								<li><a href="https://github.com/org/Campus-Guide/people?query=role%3Aowner"><i class="fa fa-github"></i>Github</a>:Campus-Guide</li>
+								<li>Tel:+255657308690</li>
+								<li>Email:Campusguide181@gmail.com</li>
 							</ul>
 						</section>
 					</div>
 					<div class="copyright">
-						&copy; This work Belongs to <a href="file:///C:/Users/annam/OneDrive/Desktop/Campus%20guide%202/index.html">Campus Guide</a>, Thank <a href="https://coverr.co">You</a>.
+						&copy; This work Belongs to <a href="file:///C:/Users/annam/OneDrive/Desktop/Campus%20guide%202/index.html">Campus Guide</a> <a href="https://coverr.co">.AllRightsReserved.</a>.
 					</div>
 				</div>
 			</footer>
